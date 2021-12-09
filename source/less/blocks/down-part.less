@@ -6,7 +6,6 @@
 }
 
 .down-part__aside {
-  //width: 54vw;
   text-align: left;
   font-family: "Lora-regular", "Arial", sans-serif;
   font-style: normal;
@@ -14,12 +13,22 @@
   font-size: 16px;
   line-height: 20px;
   padding-right: 5%;
+
+  @media (min-width: 1440px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 .down-part__aside_tell {
   font-size: 22px;
   line-height: 40px;
   vertical-align: middle;
+
+  @media (min-width: 1440px) {
+    font-size: 30px;
+    line-height: 56px;
+  }
 }
 
 .down-part__telegram {
@@ -48,4 +57,11 @@
 .down-part__telegram-img {
   vertical-align: middle;
   padding: 0 0.3em;
+}
+
+@media (min-width: 1440px) {
+  .down-part__logo {
+    width: 194px;
+    height: 68px;
+  }
 }
