@@ -24,7 +24,7 @@ const styles = () => {
     .pipe(less())
     .pipe(postcss([
       autoprefixer(),
-      csso()
+      //csso()
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -61,7 +61,7 @@ const watcher = () => {
 //HTML
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    //.pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"))
 }
 
@@ -121,7 +121,7 @@ exports.sprite = sprite;
 
 const copy = (done) => {
   gulp.src([
-    "source/fonts/*.{woff2,woff}",
+    "source/fonts/*.{woff2,woff,ttf}",
     "source/*.ico",
     "source/img/**/*.svg",
     "source/img/icons/*.xml",

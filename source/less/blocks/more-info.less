@@ -1,0 +1,65 @@
+.more-info {
+  align-self: center;
+  padding-right: 5vw;
+
+  @media (min-width: 1440px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+.more-info__link:hover {
+  color: #b17a4f;
+  background-image: url("../img/arrow-hover.png");
+}
+
+.more-info__link {
+  color: rgba(233, 219, 208, 1);
+  width: 291px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-decoration: none;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: right center;
+
+  @media (min-width: 1440px) {
+    width: 407px;
+    height: 42px;
+    background-size: 42px 42px;
+  }
+}
+
+.more-info__link::after {
+  content: " ";
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: right center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+
+  @media (min-width: 1440px) {
+    background-size: 42px 42px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.more-info__link:hover::after {
+  background-image: url("../img/arrow-hover.png");
+}
+
+.more-info__button {
+  margin: 0 auto;
+}
